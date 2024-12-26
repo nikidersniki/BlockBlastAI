@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlockBlast
+    </title>
+    <link rel="stylesheet" href="/templates/style.css">
+</head>
+<body>
+    <div id="score">0</div>
+    <div id="grid"></div>
+    <div class="debug">Send Block(All)<input type="color" id="add-color">X:<input type="number" id="add-x">Y:<input type="number" id="add-y"><button id="addSquare">Add Square Test</button></div>
+
+    <div class="debug">DrawShape Shape:<input type="number" id="shape-id"> X:<input type="number" id="add-shape-x">Y:<input type="number" id="add-shape-y"><button id="addShape">Add Shape</button></div>
+    <div id="queue"></div>
+<script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
+<script src="/templates/script.js"></script>
+</body>
+</html>

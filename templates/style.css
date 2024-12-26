@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inconsolata:wght@200..900&family=Lexend+Deca:wght@100..900&family=Lexend:wght@100..900&family=Roboto+Mono:ital,wght@0,700;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body{
+    background: rgb(67,87,173);
+    background: linear-gradient(0deg, rgba(67,87,173,1) 0%, rgba(87,114,193,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    margin: 0;
+}
+
+#grid{
+    margin-top: 100px;
+    width: 80vh;
+    border-radius: 2px;
+    height: 80vh;
+    background-color: #1d2848;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    box-shadow: 0px 0px 0px 2px #1d2848;
+    padding: 0;
+}
+
+.gridSlot{
+    background-color: #232c55;
+    padding: 0;
+    transition: 0.2s;
+    scale: 0.97;
+    box-shadow: inset 0px 0px 0px 1px #1d2848; /* Inset shadow for the effect */
+}
+
+.hover{
+    background-color: rgba(255, 255, 255, 0.466) !important;
+    padding: 0;
+    scale: 0.95;
+    box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.5); /* Inset shadow for the effect */
+    outline: none !important;
+    
+}
+.queueItem{
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    scale: 0.95;
+    margin:5px;
+    justify-items: start;
+}
+.filled{
+    scale:0.8;
+    box-shadow: none;
+    border: none;
+}
+.queueSlot{
+    padding: 0;
+    user-select: none;
+    margin: 0;
+    width: 18px;
+    height: 18px;
+}
+.selectedShape{
+    filter:contrast(1.5) brightness(1.5);   
+    scale: 1.3;
+}
+#queue{
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    z-index: 100;
+    right: 10px;
+    padding: 10px;
+    background-color: #232c55;
+    border: #1d2848 solid 2px;
+    border-radius: 2px;
+    width: 100px;
+    height: auto;
+}
+#score{
+    font-family: "Lexend", serif;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    padding: 10px;
+    width: 100%;
+    justify-content: center;
+    font-size: 60px;
+    color: white;
+}
+.debug{
+    display: none;
+}
